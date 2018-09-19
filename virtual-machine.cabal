@@ -1,0 +1,26 @@
+name:                vm
+version:             0.1.0.0
+synopsis:            A tiny virtual machine
+description:         Small virtual machine
+homepage:            https://github.com/dmjio/vm
+license:             BSD3
+license-file:        LICENSE
+author:              David Johnson
+maintainer:          djohnson.m@gmail.com
+copyright:           David Johnson (c) 2018
+category:            Development
+build-type:          Simple
+extra-source-files:  ChangeLog.md
+cabal-version:       >=1.10
+
+executable vm
+  main-is:          Main.hs
+  build-depends:    vm, base
+  default-language: Haskell2010
+
+library
+  exposed-modules:
+    VM
+  hs-source-dirs:   src
+  build-depends:    base, mtl, microlens-platform
+  default-language: Haskell2010
